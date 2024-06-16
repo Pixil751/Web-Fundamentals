@@ -44,6 +44,21 @@ body {
 img {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.header img {
+    max-width: 150px;
+}
+
+.main-content img {
+    max-width: 300px;
+}
+
+.team-photo img {
+    max-width: 200px;
+    height: auto;
 }
 
 h1,
