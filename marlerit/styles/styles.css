@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0099FF;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    /* Set header background color and align items */
+    background-color: #000033;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    /* Align logo to the left */
+    margin-left: 20px;
+}
+
+header img {
+    max-width: 50%;
+}
+
+header nav {
+    /* Center navigation links and space them apart */
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 300px;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: -185px;
+}
+
+.nav-button {
+    /* Style for navigation buttons */
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    background-color: #0066CC;
+    border-radius: 5px;
+    margin: 0 20px;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.container img {
+    max-width: 40%;
+    /* Adjusted width for index.html images */
+    height: auto;
+    margin: 20px 0;
+}
+
+.service-image {
+    max-width: auto;
+    /* Ensure images do not exceed 60% of the container width */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #0099FF;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+    }
+
+    .nav-wrapper {
+        margin-left: 0;
+        /* Remove left margin for smaller screens */
+    }
+
+    header nav {
+        gap: 10px;
+        /* Adjust gap for smaller screens */
+    }
+
+    .nav-button {
+        margin: 5px 0;
+        /* Stack buttons vertically with some margin */
+    }
+}
