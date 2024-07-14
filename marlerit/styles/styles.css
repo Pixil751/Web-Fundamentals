@@ -81,69 +81,45 @@ footer a {
 
 .image-container {
     position: relative;
-    /* Needed to position the overlay */
     width: 40%;
-    /* Adjust as needed */
     margin: 20px auto;
-    /* Center the container */
     text-align: center;
-    /* Center text */
 }
 
 
 .image-container img {
     width: 100%;
-    /* Make image fill container */
     height: auto;
-    /* Maintain aspect ratio */
     display: block;
-    /* Remove bottom space/gap */
     margin: 0 auto;
 }
 
 .overlay {
     position: absolute;
-    /* Position overlay over image */
     top: 0;
-    /* Align top */
     left: 30%;
-    /* Align left */
     right: 0;
     bottom: 0;
     width: 40%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     opacity: 0;
-    /* Start with overlay hidden */
     transition: .5s ease;
-    /* Smooth transition effect */
     background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent background */
 }
 
 .image-container:hover .overlay {
     opacity: 1;
-    /* Show overlay on hover */
 }
 
 .text {
     color: white;
-    /* Text color */
     font-size: 20px;
-    /* Text size */
     position: absolute;
-    /* Position text within overlay */
     top: 50%;
-    /* Center vertically */
     left: 50%;
-    /* Center horizontally */
     transform: translate(-50%, -50%);
-    /* Center exactly */
     text-align: center;
-    /* Center text alignment */
     font-family: 'Oswald', sans-serif;
-    /* Use Oswald font */
 }
 
 @media (max-width: 800px) {
